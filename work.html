@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <!-- saved from url=(0027)http://92049180.lofter.com/ -->
 <html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-<link media="screen" type="text/css" rel="stylesheet" href="./hwang_files/pagelayer.css"><script type="text/javascript" async src="./hwang_files/ga.js"></script><script type="text/javascript" src="./hwang_files/pagelayer.js"></script>
-
+<link media="screen" type="text/css" rel="stylesheet" href="hwang_files/pagelayer.css"><script type="text/javascript" async src="hwang_files/ga.js"></script><script type="text/javascript" src="hwang_files/pagelayer.js"></script>
+<script src="SpryAssets/SpryAccordion.js" type="text/javascript"></script>
 <meta name="themename" content="132002">
 <meta charset="utf-8">
 <title>……</title>
@@ -15,7 +15,7 @@
 <meta name="if:显示头像" content="1">
 <meta name="group1:" content="正文字号12px#正文字号12px|正文字号14px|正文字号16px">
 
-<link type="text/css" rel="stylesheet" href="./hwang_files/5629523723468935473.css">
+<link type="text/css" rel="stylesheet" href="hwang_files/5629523723468935473.css">
 <style>
 a:link {
 	color: #eb7a77;
@@ -34,6 +34,7 @@ a:active {
 	color: #eb7a77;
 }
 </style>
+<link href="SpryAssets/SpryAccordion.css" rel="stylesheet" type="text/css">
 <!--[if gte IE 8]>
 <style>
 /* 以下代码只对有环绕需求的内容使用。副作用：导致ul和ol的每一个li只有一行 */
@@ -83,8 +84,8 @@ function MM_swapImage() { //v3.0
 }
 </script>
 </head>
-<body class="p-homepage" onLoad="MM_preloadImages('tu/about me2.png','tu/works2.png','tu/ideas2.png','tu/contact2.png','tu/week12.png')"><iframe id="control_frame" allowtransparency="true" scrolling="no" frameborder="0" style="position:fixed;_position:absolute;clear:both; width: 425px; height: 32px; z-index:1337; top:0; right:15px;zoom:1; border:0px; background-color:transparent; overflow:hidden;" src="./hwang_files/control.html" width="425px" height="32px"></iframe>
-<iframe style="display:none" src="./hwang_files/music.html"></iframe>
+<body class="p-homepage" onLoad="MM_preloadImages('tu/about me2.png','tu/works2.png','tu/ideas2.png','tu/contact2.png','tu/week12.png','tu/week22.png','tu/week32.png')"><iframe id="control_frame" allowtransparency="true" scrolling="no" frameborder="0" style="position:fixed;_position:absolute;clear:both; width: 425px; height: 32px; z-index:1337; top:0; right:15px;zoom:1; border:0px; background-color:transparent; overflow:hidden;" src="hwang_files/control.html" width="425px" height="32px"></iframe>
+<iframe style="display:none" src="hwang_files/music.html"></iframe>
 
 <div class="g-doc box">
 	<div class="g-hd">
@@ -113,7 +114,7 @@ function MM_swapImage() { //v3.0
 			
 			
 				
-				<div class="m-post m-post-img   ">
+			  <div class="m-post m-post-img   ">
 				  <div class="postinner">
 				    <div class="ct">
 				      <div class="ctc box">
@@ -128,41 +129,171 @@ function MM_swapImage() { //v3.0
 				    <div class="postinner">
 				      <div class="ct">
 				        <div class="ctc box">
-				          <div class="pic"><img src="tu/week21.png" alt="" width="533" height="109"></div>
+				          <div class="pic"><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image10','','tu/week22.png',1)"><img src="tu/week211.png" width="591" height="145" id="Image10"></a></div>
 				          <div class="text">
-				            <p>XXX</p>
-			              </div>
+				            <p>使用Arduino制作一段音乐</p>
+                            <div id="Accordion1" class="Accordion" tabindex="0">
+                              <div class="AccordionPanel">
+                                <div class="AccordionPanelTab">音乐代码：</div>
+                                <div class="AccordionPanelContent">
+                                  <p>/*------------音符对应蜂鸣器频率------------*/</p>
+                                  <p>#define B0  31<br>
+                                    #define C1  33<br>
+                                    #define CS1 35<br>
+                                    #define D1  37<br>
+                                    #define DS1 39<br>
+                                    #define E1  41<br>
+                                    #define F1  44<br>
+                                    #define FS1 46<br>
+                                    #define G1  49<br>
+                                    #define GS1 52<br>
+                                    #define A1  55<br>
+                                    #define AS1 58<br>
+                                    #define B1  62<br>
+                                    #define C2  65<br>
+                                    #define CS2 69<br>
+                                    #define D2  73<br>
+                                    #define DS2 78<br>
+                                    #define E2  82<br>
+                                    #define F2  87<br>
+                                    #define FS2 93<br>
+                                    #define G2  98<br>
+                                    #define GS2 104<br>
+                                    #define A2  110<br>
+                                    #define AS2 117<br>
+                                    #define B2  123<br>
+                                    #define C3  131<br>
+                                    #define CS3 139<br>
+                                    #define D3  147<br>
+                                    #define DS3 156<br>
+                                    #define E3  165<br>
+                                    #define F3  175<br>
+                                    #define FS3 185<br>
+                                    #define G3  196<br>
+                                    #define GS3 208<br>
+                                    #define A3  220<br>
+                                    #define AS3 233<br>
+                                    #define B3  247<br>
+                                    #define C4  262<br>
+                                    #define CS4 277<br>
+                                    #define D4  294<br>
+                                    #define DS4 311<br>
+                                    #define E4  330<br>
+                                    #define F4  349<br>
+                                    #define FS4 370<br>
+                                    #define G4  392<br>
+                                    #define GS4 415<br>
+                                    #define A4  440<br>
+                                    #define AS4 466<br>
+                                    #define B4  494<br>
+                                    #define C5  523<br>
+                                    #define CS5 554<br>
+                                    #define D5  587<br>
+                                    #define DS5 622<br>
+                                    #define E5  659<br>
+                                    #define F5  698<br>
+                                    #define FS5 740<br>
+                                    #define G5  784<br>
+                                    #define GS5 831<br>
+                                    #define A5  880<br>
+                                    #define AS5 932<br>
+                                    #define B5  988<br>
+                                    #define C6  1047<br>
+                                    #define CS6 1109<br>
+                                    #define D6  1175<br>
+                                    #define DS6 1245<br>
+                                    #define E6  1319<br>
+                                    #define F6  1397<br>
+                                    #define FS6 1480<br>
+                                    #define G6  1568<br>
+                                    #define GS6 1661<br>
+                                    #define A6  1760<br>
+                                    #define AS6 1865<br>
+                                    #define B6  1976<br>
+                                    #define C7  2093<br>
+                                    #define CS7 2217<br>
+                                    #define D7  2349<br>
+                                    #define DS7 2489<br>
+                                    #define E7  2637<br>
+                                    #define F7  2794<br>
+                                    #define FS7 2960<br>
+                                    #define G7  3136<br>
+                                    #define GS7 3322<br>
+                                    #define A7  3520<br>
+                                    #define AS7 3729<br>
+                                    #define B7  3951<br>
+                                    #define C8  4186<br>
+                                    #define CS8 4435<br>
+                                    #define D8  4699<br>
+                                    #define DS8 4978</p>
+                                  <p>#define buzzer_pin 8 //定义蜂鸣器引脚</p>
+                                  <p>/*------------定义歌曲音调的数组------------*/</p>
+                                  <p>int notes[] = {<br>
+                                    C5, C5, G5, G5, A5, A5, G5,<br>
+                                    F5, F5, E5, E5, D5, D5, C5,<br>
+                                    G5, G5, F5, F5, E5, E5, D5,<br>
+                                    G5, G5, F5, F5, E5, E5, D5,<br>
+                                    C5, C5, G5, G5, A5, A5, G5,<br>
+                                    F5, F5, E5, E5, D5, D5, C5,<br>
+                                    };</p>
+                                  <p>/*------------定义歌曲节奏的数组------------*/</p>
+                                  <p>byte beats[] = {<br>
+                                    200, 200, 200, 200, 200, 200, 400,<br>
+                                    200, 200, 200, 200, 200, 200, 400,<br>
+                                    200, 200, 200, 200, 200, 200, 400,<br>
+                                    200, 200, 200, 200, 200, 200, 400,<br>
+                                    200, 200, 200, 200, 200, 200, 400,<br>
+                                    200, 200, 200, 200, 200, 200, 400,<br>
+                                    };</p>
+                                  <p>void setup() {<br>
+                                    pinMode(buzzer_pin, OUTPUT); //定义蜂鸣器引脚为输出状态<br>
+                                    }</p>
+                                  <p>void loop() {<br>
+                                    for ( int i = 0; i &lt; 42; i++) {</p>
+                                  <p>/*------------设置i在歌曲长度内递增，这样就能逐一执行数组中的数据------------*/</p>
+                                  <p> tone(buzzer_pin, notes[i]); //播放音乐<br>
+                                    delay(beats[i]*10); //播放间隔</p>
+                                  <p> noTone(buzzer_pin);<br>
+                                    delay(10);<br>
+                                    }<br>
+                                    }</p>
+                                </div>
+                              </div>
+                            </div>
+                            <p>&nbsp;</p>
+				          </div>
 			            </div>
 			          </div>
 				      <div class="more box"> <span class="circle">&nbsp;</span> <a class="date" href="tihuanmubiaowenjian"><span class="arr">&nbsp;</span><span class="txt">2017.XX.XX</span></a></div>
 				      <div class="lnks box"></div>
 			        </div>
 			      </div>
-				  <div class="postinner">
+			    <div class="postinner">
 				    <div class="ct">
 				      <div class="ctc box">
-				        <div class="pic"><img src="tu/week31.png" alt="" width="533" height="109"></div>
+				        <div class="pic"><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image9','','tu/week32.png',1)"><img src="tu/week311.png" width="591" height="145" id="Image9"></a></div>
 				        <div class="text">
-				          <p>XXX</p>
-			            </div>
+				          <p>用Microduino制作一个交互装置——“吉”</p>
+				          <p>产品说明：这是一个完全随机的抽签装置，通过不停的按按键来控制转速，松手后，便会出现属于你的“命运之签”</p>
+				          <p><img src="tu/微信图片_20170530154309.jpg" width="640" height="350"></p>
+				          <p> 　　　　　　　　　　　<img src="tu/微信图片_20170530154211.gif" width="320" height="181">　　　　</p>
+				          <p>　　　　　　　　　　　　　　　　　　动图图源来自：李溪老师　</p>
+				          <p>制作过程：</p>
+				          <p><img src="tu/微信图片_20170526083332.jpg" width="200" height="269">　　　<img src="tu/微信图片_20170526083345.jpg" width="200" height="269">　　　<img src="tu/微信图片_20170526083426.jpg" width="200" height="269"></p>
+				          <p>①制作外框顶部结构　　　　　　　　　　　②制作外框支撑结构 　　　　　　　　　　　③外框支撑架初步成型 </p>
+				          <p><img src="tu/微信图片_20170526083339.jpg" width="200" height="269">　 <img src="tu/微信图片_20170526085909.jpg" width="212" height="269"></p>
+				          <p>④制作内部转动的签的结构　　　　　　⑤制作完成&ldquo;签&rdquo; </p>
+				          <p><img src="tu/微信图片_20170526083507.jpg" width="212" height="269">　<img src="tu/微信图片_20170526083327.jpg" width="200" height="269"></p>
+				          <p>⑥外部装饰　　　　　　　　　　　　　　⑦最终效果 </p>
+				          <p>Microduino硬件：</p>
+				          <p><img src="tu/微信图片_20170530161343.jpg" width="150" height="115"><img src="tu/微信图片_20170530161349.jpg" width="150" height="115"><img src="tu/微信图片_20170530161353.jpg" width="150" height="115"><img src="tu/微信图片_20170530161357.jpg" width="150" height="115"></p>
+                        </div>
 			          </div>
 			        </div>
 				    <div class="more box"> <span class="circle">&nbsp;</span> <a class="date" href="tihuanmubiaowenjian"><span class="arr">&nbsp;</span><span class="txt">2017.XX.XX</span></a></div>
 				    <div class="lnks box"></div>
-			      </div>
-				  <div class="postinner">
-				    <div class="ct">
-				      <div class="ctc box">
-				        <div class="pic"><img src="tu/week41.png" alt="" width="533" height="109"></div>
-				        <div class="text">
-				          <p>XXX</p>
-			            </div>
-			          </div>
-			        </div>
-				    <div class="more box"> <span class="circle">&nbsp;</span> <a class="date" href="tihuanmubiaowenjian"><span class="arr">&nbsp;</span><span class="txt">2017.XX.XX</span></a></div>
-				    <div class="lnks box"></div>
-			      </div>
-				</div>
+		        </div>
+			  </div>
 				
 				<div class="m-post m-post-img   "></div>
 				
@@ -187,16 +318,20 @@ function MM_swapImage() { //v3.0
 	</div>
 	<!-- 尾部 -->
 	<div class="g-ft">
-		<p class="m-cprt">©&nbsp;<a href="./hwang_files/hwang.html">……</a>&nbsp;|&nbsp;Powered by <a href="http://www.lofter.com/">Hwang Shiying</a></p> 
+		<p class="m-cprt">©&nbsp;<a href="hwang_files/hwang.html">……</a>&nbsp;|&nbsp;Powered by <a href="http://www.lofter.com/">Hwang Shiying</a></p> 
 	</div>
 </div>
-<script type="text/javascript" src="./hwang_files/jquery-1.6.2.min.js"></script>
-<script type="text/javascript" src="./hwang_files/6597131339307155859.js"></script>
+<script type="text/javascript" src="hwang_files/jquery-1.6.2.min.js"></script>
+<script type="text/javascript" src="hwang_files/6597131339307155859.js"></script>
 
 
 <script>window.Theme = {'ImageProtected':false,'CcType':0,ContextValue:'版权保护'};</script>
-<script src="./hwang_files/themecommon.js" type="text/javascript"></script>
-<script src="./hwang_files/ntes.js" type="text/javascript"></script><script>_ntes_nacc = 'lofter';try{neteaseTracker();}catch(e){}</script>
+<script src="hwang_files/themecommon.js" type="text/javascript"></script>
+<script src="hwang_files/ntes.js" type="text/javascript"></script><script>_ntes_nacc = 'lofter';try{neteaseTracker();}catch(e){}</script>
 <script>var _gaq = _gaq || [];_gaq.push(['_setAccount', 'UA-31007899-1'],['_setLocalGifPath', '/UA-31007899-1/__utm.gif'],['_setLocalRemoteServerMode']);_gaq.push(['_setDomainName', 'lofter.com']);_gaq.push(['_trackPageview']);(function() { var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true; ga.src = 'http://wr.da.netease.com/ga.js'; var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s); })();</script>
 
-<iframe src="./hwang_files/recommend.html" style="display: none;"></iframe></body></html>
+<iframe src="hwang_files/recommend.html" style="display: none;"></iframe>
+<script type="text/javascript">
+var Accordion1 = new Spry.Widget.Accordion("Accordion1");
+</script>
+</body></html>

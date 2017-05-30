@@ -114,7 +114,10 @@ body{background-image:url(http://img.ph.126.net/KgCTp-BPkXp1dZuU8ksvSg==/5629509
 .m-post .ctc ul li{list-style:disc outside;}
 .m-post .ctc ol li{list-style:decimal outside;}
 .m-post .ctc blockquote{border-left:1px solid #ccc;padding-left:10px;}
-.m-post .ctc p,.m-post .ctc ul,.m-post .ctc ol,.m-post .ctc blockquote,.m-post .ctc .text,.m-post .ctc .digest{margin:0 0 20px;}
+.m-post .ctc p,.m-post .ctc ul,.m-post .ctc ol,.m-post .ctc blockquote,.m-post .ctc .text,.m-post .ctc .digest{
+	margin: 0 0 20px;
+	text-align: left;
+}
 /* Multimedias of posts */
 .m-post img,.m-post object,.m-post embed{max-width:100% !important;_width:100%;}
 .m-post object,.m-post embed{*width:100%;}
@@ -122,7 +125,10 @@ body{background-image:url(http://img.ph.126.net/KgCTp-BPkXp1dZuU8ksvSg==/5629509
 .m-post-video .pic object,.m-post-video .pic embed{display:block;width:700px;height:438px;}
 .m-post .cover img,.m-post .thumbnail img{float:left;width:200px;margin:0 30px 10px 0;}
 .m-post img,.m-post-video .pic,.m-post .player{margin-bottom:20px;}
-.m-post img{vertical-align:middle;}
+.m-post img{
+	vertical-align: middle;
+	text-align: left;
+}
 
 /* post detail */
 .m-postdtl .m-post,.m-cmthot,.m-pager-dtl{margin:0 0 50px;}
